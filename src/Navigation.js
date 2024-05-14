@@ -9,7 +9,7 @@ function Navigation() {
     <nav className="nav-menu">
       <ul className="nav-list">
         <li className="nav-item">
-          <NavLink to="/Profile" activePath={location.pathname}>
+          <NavLink to="/" activePath={location.pathname}>
             Profile
           </NavLink>
         </li>
