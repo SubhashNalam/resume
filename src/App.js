@@ -16,7 +16,7 @@ function App() {
         <Navigation />
         <div className="content">
           <Routes>
-            <Route path="/" exact element=<Profile /> />
+            <Route path="/profile" exact element=<Profile /> />
             <Route path="/personal-details" element=<PersonalDetails /> />
             <Route path="/education" element=<Education /> />
             <Route path="/experience" element=<Experience /> />
