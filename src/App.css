@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app-container {
+  background-image: url("bc1.jpg");
+  background-size: cover;
+  background-position: center;
   min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+.content {
+  padding: 20px;
+}
+
+h1 {
+  margin-left: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h2 {
+  margin-left: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  background-color: #fff; /* Container background color */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Container shadow */
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  width: calc(33.33% - 20px); /* Adjust the width of containers as needed */
+}
+
+.right-container {
+  background-color: #fff; /* Container background color */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Container shadow */
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  width: calc(33.33% - 20px); /* Adjust the width of containers as needed */
+  position: absolute;
+  top: 175px;
+  right: 250px;
+}
+
+.center-container {
+  background-color: #fff; /* Container background color */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Container shadow */
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  width: calc(70% - 20px); /* Adjust the width of containers as needed */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column; /* Change to a column layout on smaller screens */
+    align-items: center; /* Center align items */
+  }
+
+  .container,
+  .right-container,
+  .center-container {
+    width: 100%; /* Full width for containers on smaller screens */
+  }
+}
+
+.social-media-icon {
+  width: 24px; /* Set the width of the icon */
+  height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+  margin-right: 15px; /* Add a right margin between icons */
+}
+
+.social-media-links {
   display: flex;
-  flex-direction: column;
+}
+
+.icon-container {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: absolute;
+  background-color: #fff; /* Container background color */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Container shadow */
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  margin-left: 550px;
+  margin-top: 70px;
+  width: calc(9.5% - 20px); /* Adjust the width of containers as needed */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.whatsapp-qr {
+  align-items: center;
+  position: absolute;
+  background-color: #fff; /* Container background color */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Container shadow */
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  margin-left: 525px;
+  margin-top: 170px;
+  width: calc(13.5% - 20px); /* Adjust the width of containers as needed */
 }
