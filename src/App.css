@@ -99,3 +99,7 @@ h2 {
   margin-top: 170px;
   width: calc(13.5% - 20px); /* Adjust the width of containers as needed */
 }
+
+sub {
+  font-size: small;
+}

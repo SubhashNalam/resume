@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Education from "./Education";
 import Experience from "./Experience";
 import Contact from "./Contact";
@@ -12,7 +12,9 @@ function App() {
   return (
     <Router>
       <div className="app-container">
-        <h1>Subhash Nalam</h1>
+        <h1>
+          Subhash Nalam<sub>(Automation Tester)</sub>
+        </h1>
         <Navigation />
         <div className="content">
           <Routes>
